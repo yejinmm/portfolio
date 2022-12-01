@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Ubuntu','NanumSquareNeo-Variable', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+section{padding-top: 40px;}
+strong {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: #998eb9;
+}
+strong:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background: linear-gradient(90deg, rgb(202, 249, 82) 0%, rgb(218, 190, 237) 100%);
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+p{padding-top: 40px; line-height: 30px;}
+img{ padding-top: 60px;}
+</style>
+<body>
+    <section>
+        <div>
+            <strong>상세페이지</strong>
+            <p>제품 패키지를 활용한 컬러 초이스로 상세페이지에 통일감을 주었습니다. <br>
+               제품의 효과를 알아보기 쉽게 효과 위주로 레이아웃을 구성하였습니다.
+            </p>
+        </div>
+        <div>
+            <img src="../img/nove.webp" alt="">
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Ubuntu','NanumSquareNeo-Variable', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+section{padding-top: 40px;}
+strong {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: #998eb9;
+}
+strong:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background: linear-gradient(90deg, rgb(202, 249, 82) 0%, rgb(218, 190, 237) 100%);
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+p{padding-top: 40px; line-height: 30px;}
+img{ padding-top: 60px;}
+</style>
+<body>
+    <section>
+        <div>
+            <strong>상세페이지</strong>
+            <p>제품의 모던함을 그린 & 브라운으로 컬러배치하여 클래식하게 디자인 하였습니다. <br>
+               제품의 상세컷을 자세하게 배치하여 고객의 이목을 끌도록 하였습니다. 폰트 또한 제품의 스타일과 비슷한 글씨체로 선정하였습니다
+            </p>
+        </div>
+        <div>
+            <img src="../img/beauty.webp" alt="">
+        </div>
+    </section>
+</body>
+</html>

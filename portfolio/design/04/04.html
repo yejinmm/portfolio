@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    font-family: 'Ubuntu','NanumSquareNeo-Variable', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+section{padding-top: 40px;}
+strong {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  color: #998eb9;
+}
+strong:before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 80px;
+  background: linear-gradient(90deg, rgb(202, 249, 82) 0%, rgb(218, 190, 237) 100%);
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+p{padding-top: 40px; line-height: 30px;}
+img{ padding-top: 60px;}
+</style>
+<body>
+    <section>
+        <div>
+            <strong>이벤트페이지</strong>
+            <p>무신사과 코드그라피의 콜라보행사를 직선을 활용하여 디자인하였습니다. <br>
+                지루하지 않은 레이아웃을 배치하였습니다. 자연스러운 구매를 유도하는 형식의 이벤트페이지입니다. 
+            </p>
+        </div>
+        <div>
+            <img src="../img/musinsa.webp">
+        </div>
+    </section>
+</body>
+</html>
