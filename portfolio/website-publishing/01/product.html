@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/base.css">
+<link rel="icon" href="img/common/favicon.png">
+  <!-- Link Swiper's CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="css/product.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/product.js"></script>
+<script src="js/base.js"></script>
+
+<title></title>
+</head>
+<body>
+  <div class="container">
+    <header class="fixed-top" id="pc">
+        <div class="container navbar">
+                <div class="logo"><a href="index.html"><img src="img/common/logo.png" alt="" ></a></div>
+                <div class="gnb">
+                  <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">멤버쉽</a></li>
+                  </ul>
+                </div>
+                
+                <nav>
+                    <ul  class="navbar_menu" id="menu">
+                      <li>
+                         <a class="btn3" href="#">Company</a>
+                         <div class="menu-dropdown">
+                          <a href="company.html">회사소개</a>
+                          <a href="company.html">CEO</a>
+                        </div>
+                        </li>
+                      <li> <a class="btn3" href="#">Product</a> 
+                        <div class="menu-dropdown">
+                          <a href="product.html">위니비니</a>
+                          <a href="product.html">event</a>
+                        </div></li>
+                      <li> <a class="btn3" href="#">Contact</a>
+                        <div class="menu-dropdown">
+                          <a href="qna.html">QnA</a>
+                          <a href="qna.html">가맹점</a>
+                        </div></li>
+                    </ul>
+                 </nav> 
+                 <div class="search">
+                    <span class="clear"><i class="xi-close-thin"></i></span>
+                    <div class="icon"><i class="xi-search"></i></div>
+                    <div class="input-frame">
+                      <input type="text" id="searchInput" placeholder="What are you looking for?">
+                    </div>
+                  </div>
+              </div>
+    </header>
+    <div class="mo-m">
+      <div id="bt" ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#D92027" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </div>
+     <div class="mo-logo"><a href="index.html"><img src="img/common/logo.png" alt=""></a></div>
+  </div> 
+  <div class="sub-menu-mo" id="mo">
+    <i class="xi-close" id="close"></i>
+      <h2 class="menu-name">MENU</h2>
+      <article class="sub-top flex-box">
+        <article class="log"><a href="login-mo.html"><p>로그인</p></a></article>
+        <article class="join"><p>회원가입</p></article>
+      </article>
+      <div class="sub-menu-mo-title"><span data-text="Company">Company</span><i class="xi-plus-min"></i> 
+        <div class="sub-menu-mo-list">
+            <ul>
+                <li><a href="company.html" >회사소개</a></li>
+                <li><a href="company.html" >CEO</a></li>
+            </ul>	
+        </div>
+    </div>
+      <div class="sub-menu-mo-title"><span data-text="Product">Product</span><i class="xi-plus-min"></i> 
+          <div class="sub-menu-mo-list">
+              <ul>
+                  <li><a href="product.html" >위니비니</a></li>
+                  <li><a href="product.html" >event</a></li>
+              </ul>	
+          </div>
+      </div>
+      <div class="sub-menu-mo-title"><span  data-text="Contact">Contact</span><i class="xi-plus-min"></i> 
+          <div class="sub-menu-mo-list">
+              <ul>
+                  <li><a href="qna.html" >QnA</a></li>
+                  <li><a href="qna.html" >가맹점</a></li>   
+              </ul>
+          </div>
+        </div>
+    <article class="sub-menu-bottom">
+       <i class="xi-instagram"></i>
+       <i class="xi-kakaotalk"></i>
+       <i class="xi-youtube-play"></i>
+       </article>
+      
+      </div> 
+<div class="main-section-box"> 
+    <section class="section-swiper">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/sub2/banner-3.png" alt=""></div>
+          <div class="swiper-slide"><img src="img/sub2/banner-2.png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="main-section container">
+      <div class="heading">
+        <div><span>제품소개</span></div>
+    
+      </div>
+      <div class="tab-inner">
+        <ul class="btn">
+          <li data-alt="tab1" class="active">CHOCO</li>
+          <li data-alt="tab2">CANDY</li>
+          <li data-alt="tab3">JELLY</li>
+          <li data-alt="tab4">SNACK</li>
+          <li data-alt="tab5">COOKIE</li>
+        </ul>
+        <div class="tabs">
+          <div id="tab1" class="active">
+            <!-- tab 시작 -->
+            <div class="choco flex-box">
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img1.png" alt="">
+                <div class="caption">
+                <span><i class="xi-heart"></i></span>
+                <span><i class="xi-cart"></i></span>
+                </div>
+                <div class="product-title">
+                <p>조단아몬드</p>
+                <p>2,200원</p>
+                </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img2.png" alt="">
+                <div class="caption">
+                  <span><i class="xi-heart"></i></span>
+                  <span><i class="xi-cart"></i></span>
+                  </div>
+                <div class="product-title">
+                  <p>
+                    밀크초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img3.png" alt="">
+                <div class="caption">
+                  <span><i class="xi-heart"></i></span>
+                  <span><i class="xi-cart"></i></span>
+                  </div>
+                <div class="product-title">
+                  <p>프리첼초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img4.png" alt="">
+                <div class="caption">
+                  <span><i class="xi-heart"></i></span>
+                  <span><i class="xi-cart"></i></span>
+                  </div>
+                <div class="product-title">
+                  <p>
+                   드라제(그린)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="caption">
+                  <span><i class="xi-heart"></i></span>
+                  <span><i class="xi-cart"></i></span>
+                  </div>
+                <div class="product-title">
+                  <p>
+                   드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img6.png" alt="">
+                <div class="caption">
+                  <span><i class="xi-heart"></i></span>
+                  <span><i class="xi-cart"></i></span>
+                  </div>
+                <div class="product-title">
+                  <p>콘후레이크</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="caption">
+                  <span><i class="xi-heart"></i></span>
+                  <span><i class="xi-cart"></i></span>
+                  </div>
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img8.png" alt="">
+                <div class="caption">
+                <span><i class="xi-heart"></i></span>
+                <span><i class="xi-cart"></i></span>
+                </div>
+                <div class="product-title">
+                  <p>화이트폴</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="pro flex-box">
+                <img src="img/sub2/choco-img8.png" alt="">
+                <div class="caption">
+                <span><i class="xi-heart"></i></span>
+                <span><i class="xi-cart"></i></span>
+                </div>
+                <div class="product-title">
+                  <p>화이트폴</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+          
+            
+           </div>   
+          </div>
+          <!-- tab 1 끝 -->
+          <!-- tab 2 시작 -->
+          <div id="tab2">
+            <div class="choco flex-box">
+              <div class="flex-box">
+                <img src="img/sub2/candy-img1.png" alt="">
+                <div class="product-title">
+                <p>오가닉체리</p>
+                <p>2,200원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img2.png" alt="">
+                <div class="product-title">
+                <p>
+                  퍼니본</p>
+                <p>2,200원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img3.png" alt="">
+                <div class="product-title">
+                <p>바나나캔디</p>
+                <p>2,200원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img4.png" alt="">
+                <div class="product-title">
+                <p>라이크스마일</p>
+                <p>2,200원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img5.png" alt="">
+                <div class="product-title">
+                <p>휘리팝</p>
+                <p>3,500원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img6.png" alt="">
+                <div class="product-title">
+                <p>
+                  휘리팝</p>
+                <p>3,500원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img7.png" alt="">
+                <div class="product-title">
+                <p>캔디케인</p>
+                <p>1,800원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img8.png" alt="">
+                <div class="product-title">
+                  <p>야미릭스롤리팝</p>
+                <p>1,100원</p>
+                </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/candy-img9.png" alt="">
+                <div class="product-title">
+                <p>야미릭스롤리팝</p>
+                <p>1,100원</p>
+                </div>
+              </div>
+           </div>   
+     
+          </div>
+          <!-- tab 2 끝 -->
+          <!-- tab 3 시작 -->
+      
+          <div id="tab3">
+            <div class="choco flex-box">
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+              <div class="flex-box">
+                <img src="img/sub2/choco-img5.png" alt="">
+                <div class="product-title">
+                  <p>
+                    드라제(귤)</p>
+                  <p>2,200원</p>
+                  </div>
+              </div> 
+           </div>  
+          </div>
+           <!-- tab 3 끝 -->
+           <!-- tab 4 시작 -->
+          <div id="tab4">
+            <div class="choco flex-box">
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img7.png" alt="">
+                <div class="product-title">
+                  <p>
+                    폴초콜릿</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+           </div>  
+          </div>
+           <!-- tab 4 끝 -->
+           <!-- tab 5 시작 -->
+          <div id="tab5">
+            <div class="choco flex-box">
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+              <div class="flex-box">
+                <img src="img/sub2/choco-img9.png" alt="">
+                <div class="product-title">
+                  <p>해바라기</p>
+                  <p>2,200원</p>
+                  </div>
+              </div>
+           </div>  
+          </div>
+          <!-- tab 5 끝 -->
+        </div>
+          <!-- tabs  끝 -->
+      </div>
+          <!-- tab-inner  끝 -->
+    </section>
+  </div>
+
+  
+</div> <!-- 컨테이너 -->
+<div class="">
+<footer class="footer-outer container-fluid">
+    <div class="footer-layer"></div>
+  <div class="footer-inner">
+    <div class="copyright">
+      <div class="policy">
+        <a href="company.html">ABOUT</a>
+      </div>
+      <div class="info">
+        <p>
+          BUY SHOP
+        </p>
+        <div class="sweetspace-dropdown">
+        <div class="sweetspace"> 
+          Weeny Beeny
+        </div>
+        <div class="sweet-text">
+          <p>주소 : 서울시 강남구 도곡로 182, 9층 (도곡동) TEL : 02-587-5044 <br>
+            이메일 : admin@cmix.co.kr 개인정보관리자 : 조승권
+           (주)씨믹스
+           </p>
+        </div>
+      </div>
+      </div>
+       
+    </div>
+    <div class="sns">
+      <span><i class="xi-instagram"></i></span>
+      <span><i class="xi-kakaotalk"></i></span>
+      <span><i class="xi-youtube-play"></i></span>
+    </div>
+    <div class="family">
+     
+      <div class="dropdown">
+        <div class="title">Family Site</div>
+        <ul class="sub-navi">
+          <li><a href="#">CANDY</a></li>
+          <li><a href="#">CHOCO</a></li>
+          <li><a href="#">JELLY</a></li>
+          <li><a href="#">COOKIE</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+</footer>
+</div>
+
+<div class="mouse">
+  <h1 class="h1">test</h1>
+    <img src="img/common/candy-mose1.png" class="candy" alt="캔디">
+    <img src="img/common/candy-mose2.png" class="candy2" alt="캔디">
+    <img src="img/common/candy-mose3.png" class="candy3" alt="캔디">
+    <img src="img/common/candy-mose4.png" class="candy4" alt="캔디">
+    <img src="img/common/candy-mose5.png" class="candy5" alt="캔디">
+    <img src="img/common/candy-mose6.png" class="candy6" alt="캔디">
+  </div>
+
+
+
+
+
+
+   <script>
+ 
+    
+  </script>
+         
+         <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+         <!-- Initialize Swiper -->
+         <script>
+           var swiper = new Swiper(".mySwiper", {
+             spaceBetween: 30,
+             centeredSlides: true,
+             autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+             },
+             pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+             },
+             navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+             },
+           });
+         </script>
+
+
+<script>
+
+    
+let candy;
+   let candy2;
+   let candy3;
+   let candy4;
+   let candy5;
+   let candy6;
+
+   let h1;
+
+   let x = 0;
+   let y = 0;
+   let mx = 0;
+   let my = 0;
+   let speed = 0.009;
+
+   window.onload = function(){
+     h1 = document.getElementsByTagName("h1")[0];
+     candy = document.getElementsByClassName("candy")[0];
+     candy2 = document.getElementsByClassName("candy2")[0];
+     candy3 = document.getElementsByClassName("candy3")[0];
+     candy4 = document.getElementsByClassName("candy4")[0];
+     candy5 = document.getElementsByClassName("candy5")[0];
+     candy6 = document.getElementsByClassName("candy6")[0];
+
+     window.addEventListener("mousemove", mouseFunc, false);
+
+     function mouseFunc(e){
+       x = (e.clientX - window.innerWidth / 4);
+       y = (e.clientY - window.innerHeight / 4);
+     }
+     loop();
+   }
+
+
+
+
+   function loop(){
+     mx += (x - mx) * speed;
+     my += (y - my) * speed;
+
+     h1.innerHTML = "x: " + x + " mx: " + mx;
+     candy.style.transform = "translate("+ (mx/9) +"px," + (my/9) +"px)";
+     candy2.style.transform = "translate("+ (mx/8) +"px," + (my/8) +"px)";
+     candy3.style.transform = "translate("+ (mx/9) +"px," + (my/9) +"px)";
+     candy4.style.transform = "translate("+ (mx/9) +"px," + (my/9) +"px)";
+     candy5.style.transform = "translate("+ (mx/9) +"px," + (my/9) +"px)";
+     candy6.style.transform ="translate("+ (mx/6) +"px," + (my/6) +"px)";;
+
+
+     window.requestAnimationFrame(loop);
+   }
+   
+    
+
+
+
+
+
+
+</script>
+
+
+          
+</body>
+</html>

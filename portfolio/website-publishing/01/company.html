@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="img/common/favicon.png">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- TypeIt -->
+  <script src="js/typeit.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <script src="js/base.js"></script>
+   <script src="js/company.js"></script>
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/company.css">
+</head>
+
+<style>
+
+</style>
+<script src="https://kit.fontawesome.com/c88c9f825f.js" crossorigin="anonymous"></script>
+<!-- css는 스크립트 위쪽에 기재 제이쿼리 파일은 커스텀 자바스크립트 파일 위에 배치 --> 
+<title></title>
+</head>
+<body>
+  <div class="container">
+    <header class="fixed-top" id="pc">
+        <div class="container navbar">
+                <div class="logo"><a href="index.html"><img src="img/common/logo.png" alt="" ></a></div>
+                <div class="gnb">
+                  <ul>
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">멤버쉽</a></li>
+                  </ul>
+                </div>
+                <nav>
+                    <ul  class="navbar_menu" id="menu">
+                      <li>
+                         <a class="btn3" href="#">Company</a>
+                         <div class="menu-dropdown">
+                          <a href="company.html">회사소개</a>
+                          <a href="company.html">CEO</a>
+                        </div>
+                        </li>
+                      <li> <a class="btn3" href="#">Product</a> 
+                        <div class="menu-dropdown">
+                          <a href="product.html">위니비니</a>
+                          <a href="product.html">event</a>
+                        </div></li>
+                      <li> <a class="btn3" href="#">Contact</a>
+                        <div class="menu-dropdown">
+                          <a href="qna.html">QnA</a>
+                          <a href="qna.html">가맹점</a>
+                        </div></li>
+                    </ul>
+                 </nav> 
+                 <div class="search">
+                    <span class="clear"><i class="xi-close-thin"></i></span>
+                    <div class="icon"><i class="xi-search"></i></div>
+                    <div class="input-frame">
+                      <input type="text" id="searchInput" placeholder="What are you looking for?">
+                    </div>
+                  </div>
+              </div>
+    </header>
+    <div class="mo-m">
+      <div id="bt" ><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#D92027" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </div>
+     <div class="mo-logo"><a href="index.html"><img src="img/common/logo.png" alt=""></a></div>
+  </div>   
+  <div class="sub-menu-mo" id="mo">
+    <i class="xi-close" id="close"></i>
+      <h2 class="menu-name">MENU</h2>
+      <article class="sub-top flex-box">
+        <article class="log"><a href="login-mo.html"><p>로그인</p></a></article>
+        <article class="join"><p>회원가입</p></article>
+      </article>
+      <div class="sub-menu-mo-title"><span data-text="Company">Company</span><i class="xi-plus-min"></i> 
+        <div class="sub-menu-mo-list">
+            <ul>
+                <li><a href="company.html" >회사소개</a></li>
+                <li><a href="company.html" >CEO</a></li>
+            </ul>	
+        </div>
+    </div>
+      <div class="sub-menu-mo-title"><span data-text="Product">Product</span><i class="xi-plus-min"></i> 
+          <div class="sub-menu-mo-list">
+              <ul>
+                  <li><a href="product.html" >위니비니</a></li>
+                  <li><a href="product.html" >event</a></li>
+              </ul>	
+          </div>
+      </div>
+      <div class="sub-menu-mo-title"><span  data-text="Contact">Contact</span><i class="xi-plus-min"></i> 
+          <div class="sub-menu-mo-list">
+              <ul>
+                  <li><a href="qna.html" >QnA</a></li>
+                  <li><a href="qna.html" >가맹점</a></li>   
+              </ul>
+          </div>
+        </div>
+    <article class="sub-menu-bottom">
+       <i class="xi-instagram"></i>
+       <i class="xi-kakaotalk"></i>
+       <i class="xi-youtube-play"></i>
+       </article>
+      
+      </div>
+
+    <section class="container-fluid">
+      <div class="company-main">
+          <div id="typing"></div>
+         <div class="item">
+          <div class="front">
+            <img src="img/sub1/title-main-img.png">
+            <h2>trust</h2>
+          </div>
+          <div class="back">
+            <p>
+              높은 퀄리티의 다양한 제품들을 새로운 운영방식으로
+              더큰 신뢰를 줄 수 있는
+              기업이 될 수 있도록 노력하겠습니다.<br><br>
+            </p>
+            <a href="#">Read More </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <img src="img/sub1/title-main-img2.png">
+            <h2>Safe</h2>
+          </div>
+          <div class="back">
+            <p>
+              안전한 성분으로 고객의 건강을 생각합니다. 천연 무색소
+              제품의 파이를 넓혀가겠습니다.<br><br>
+            </p>
+            <a href="#">Read More </a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="front">
+            <img src="img/sub1/title-main-img3.png">
+            <h2>Value</h2>
+          </div>
+          <div class="back">
+            <p>
+              기업의 가치를 꿈, 희망, 신뢰로 
+              매일 안주하는 삶이 아닌 새로운 아이덴티티를 실현합니다.<br><br>
+            </p>
+            <a href="#">Read More </a>
+          </div>
+        </div>
+        <div class="company-overview">
+          <h2>Company Overview.</h2>
+        </div>  
+        <div class="company-overview-img"><img src="img/sub1/wb-bi.png" alt=""></div>
+       <hr>
+        <div class="company-info">
+          <div class="company-info-text flex-box">
+            <div>
+              <p>회사명 &nbsp;&nbsp;</p>
+              <p>씨넥스</p>
+            </div>
+            <div>
+              <p>회사주소</p>
+              <p>서울시 강남구 도곡로 182 </p>
+            </div>
+          </div>
+          <div class="company-info-text flex-box">
+            <div>
+              <p>대표이사</p>
+              <p>이왕행</p>
+            </div>
+            <div>
+              <p>전화번호</p>
+              <p>02-587-5044</p>
+            </div>
+          </div>
+          <div class="company-info-text flex-box">
+            <div>
+              <p>설립연월</p>
+              <p>1990-12-06</p>
+            </div>
+            <div>
+              <p>팩스번호</p>
+              <p>02-587-5044</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="company-info-b"> 
+          <h2>Bi.</h2>
+          <div class="company-info-c">
+            <p>위니비니는 재미(Fun)과 달콤함(Sweet)을 즐기는 공간을 시각화 한것으로
+              빨간콩의 형태는꿈과 즐거움, 풍요의 상징이며 동화와 같은 달콤한 이미지를 전한다</p>
+            </div>
+            <div class='company-info-img'>
+                <img src="img/sub1/wb-ci.png" alt="">
+              </div>
+        </div>
+     </div>
+    </section>
+
+  
+</div> <!-- 컨테이너 -->
+<div class="">
+<footer class="footer-outer container-fluid">
+    <div class="footer-layer"></div>
+  <div class="footer-inner">
+    <div class="copyright">
+      <div class="policy">
+        <a href="company.html">ABOUT</a>
+      </div>
+      <div class="info">
+        <p>
+          BUY SHOP
+        </p>
+        <div class="sweetspace-dropdown">
+        <div class="sweetspace"> 
+          Weeny Beeny
+        </div>
+        <div class="sweet-text">
+          <p>주소 : 서울시 강남구 도곡로 182, 9층 (도곡동) TEL : 02-587-5044 <br>
+            이메일 : admin@cmix.co.kr 개인정보관리자 : 조승권
+            (주)씨믹스
+           </p>
+        </div>
+      </div>
+      </div>
+       
+    </div>
+    <div class="sns">
+      <span><i class="xi-instagram"></i></span>
+      <span><i class="xi-kakaotalk"></i></span>
+      <span><i class="xi-youtube-play"></i></span>
+    </div>
+    <div class="family">
+     
+      <div class="dropdown">
+        <div class="title">Family Site</div>
+        <ul class="sub-navi">
+          <li><a href="#">CANDY</a></li>
+          <li><a href="#">CHOCO</a></li>
+          <li><a href="#">JELLY</a></li>
+          <li><a href="#">COOKIE</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="mouse">
+    <img src="img/common/candy-mose1.png" class="candy" alt="캔디">
+    <img src="img/common/candy-mose4.png" class="candy4" alt="캔디">
+    <img src="img/common/candy-mose5.png" class="candy5" alt="캔디">
+    <img src="img/common/candy-mose6.png" class="candy6" alt="캔디">
+  </div>
+</footer>
+</div>
+     
+
+
+
+<script>
+   
+   
+    
+$('.main-title').click(function(){
+  $(this).addClass('active')
+  $(this).siblings('.main-title').removeClass('active')
+  $(this).siblings('.main-desc').stop().slideUp()
+  $(this).next().stop().slideDown()
+
+  var dataImage = $(this).attr('data-image')
+  $('.img img').attr('src', dataImage)
+})
+
+</script>
+
+<script>
+    $('#trigger').click(function(){
+              $('.main-heading').toggleClass('active')
+            });
+    $('#trigger').click(function(){
+         $('.main-accordion').toggleClass('active')
+            });   
+    $('#trigger').click(function(){
+         $('.main-section').toggleClass('active')
+            });   
+
+</script>
+
+          
+</body>
+</html>

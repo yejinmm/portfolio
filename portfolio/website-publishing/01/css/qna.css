@@ -1,0 +1,188 @@
+
+/* FontAwesome 4.7 CDN */
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+*{box-sizing: border-box;}
+
+
+
+/* Layout */
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px ;
+  padding: 100px 0;
+
+}
+.main-section article {
+  width: 980px;
+  height: 100vh;
+}
+
+.main-heading{text-align: center;}
+
+.main-heading>p{
+  color: #f68c13;
+  font-size: 40px;
+  padding-bottom: 30px;
+  font-weight: bold ;
+}
+
+
+.main-content > div {
+  width: 50%;
+  float: left;
+  height: 400px;
+}
+
+.main-title {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  /* position: relative; */
+  transition: 0.3s;
+  font-size: 22px;
+
+
+}
+.main-title:after {
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  margin-top: 3px;
+  transition: 0.3s;
+}
+.main-title.active:after {
+  transform: rotate(90deg);
+  color: #D92027;
+}
+.main-title:hover,
+.main-title.active {
+  background-color: #f68c13;
+  color: #fff;
+}
+.main-desc {
+  padding: 10px;
+  display: none;
+  background-color: #fff;
+  
+}
+.main-desc.active {
+  display: block;
+}
+.img img{
+  width: 300px; 
+  height: 300px;
+  margin-left: 80px;
+}
+.main-section.active{background-color: transparent;}
+
+.main-heading.active{display: none;}
+
+.main-accordion.active{display: none;}
+/* tool tip */
+
+.icon-call {
+  width: 30px;
+  height:30px;
+  position: relative;
+  position: fixed;
+  right: 550px;
+  top: 250px;
+  cursor: pointer;
+}
+.icon-call i{
+  font-size: 50px;
+  background-color: #f68c13;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  animation: touch 1s linear infinite;
+
+ }
+.icon-call span {
+  position: absolute;
+  background-color:#f68c13;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+  visibility: hidden;
+}
+.icon-call span:after {
+  content: '';
+  position: absolute;
+  background-color: #f68c13;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -6px;
+  left: 50%;
+}
+.icon-call:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes touch {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+/* 태블릿 기기*/
+@media(max-width:991px){
+ .main-section{padding: 30px;}
+.img{margin-left: -50px;}
+   
+ .icon-call {
+  position: fixed;
+  right: 100px;
+  top: 250px;}
+
+  .main-heading span{font-size: 30px;}
+  .icon-call {display: none;}
+  
+  .main-content > div {
+  width: 70%;
+  float: none;
+  margin-left: 100px;
+
+}
+/*폰 기기 */   
+@media(max-width:767px){ 
+  
+  .img{
+  display: none;}
+
+  .main-heading>p{
+    font-size: 35px;
+    margin-top: 50px;}
+    
+
+  .main-content > div {
+    width: 100%;
+    float: none;
+   margin-left: 0px;}
+  
+}
+.main-section article {
+  height: 80vh;
+}
+
+}

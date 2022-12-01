@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="icon" href="img/common/favicon.png">
+  <link rel="stylesheet" href="css/login.css">
+  <scripts src="js/login.js"></scripts>
+ 
+  <!-- jQuery CDN 3.5.1 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ 
+  <style>
+    /* XEION CDN */
+   @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+   
+  </style>
+
+</head>
+<body>
+
+<section class="login" id="box">
+  <div class="back-btn">
+    <a href="javascript:history.back()">
+      <span><i class="xi-close"></i></span>
+    </a>
+  
+  </div>
+    <a href="index.html"><img src="img/login/heart2.png" alt="Wenny-Logo"></a>
+    <h1>WEENY BEENY</h1>
+    <form action="">
+      <div class="input-field">
+        <input type="email" id="userid" autocomplete="off" required><span>USER EMAIL</span>
+      </div>
+      <div class="input-field">
+        <input type="password" id="userpw" required maxlength="12" minlength="8"><span>PASSWORD</span>
+      </div>
+      <div class="button-field">
+        <input type="submit" value="Login" id="login-btn">
+      </div>
+      <div class="add-info">
+        <label>
+          <input type="checkbox" id="save-email"><em class="heart"></em><span>Save your Email?</span>
+        </label>
+        <a href="#">아이디를 잊으셨나요?</a>
+      </div>
+      <a href="#">회원가입</a>
+    </form>
+  </section>
+
+  <div class="cursorItem">
+    <span class="circle"></span>
+</div>
+
+
+  <script>
+let btn_box;
+let cursorItem;
+let circle;
+let x=0, y = 0;
+let mx=0, my = 0;
+
+window.onload = function(){
+    btn_box = document.querySelector("#box");
+
+    cursorItem = document.querySelector(".cursorItem");
+    circle = cursorItem.querySelector(".circle");    
+
+    btn_box.addEventListener("mouseover", function(e){
+        circle.style.transform = "scale(.3)";
+    })
+    btn_box.addEventListener("mouseout", function(e){
+        circle.style.transform = "scale(1)";
+    })
+
+    window.addEventListener("mousemove", function(e){
+        x = e.clientX;
+        y = e.clientY;
+        cursorItem.style.transform = "translate("+ x +"px, "+ y + "px )";
+    });
+    
+    loop();
+}
+
+function loop(){
+    mx += (x - mx ) * .09;
+    my += (y - my ) * .09; 
+    cursorItem.style.transform = "translate("+ mx +"px, "+ my + "px )";
+
+    requestAnimationFrame(loop);
+}
+  </script>
+
+  
+</body>
+</html>
