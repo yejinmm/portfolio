@@ -1,0 +1,352 @@
+*{margin: 0; padding: 0; box-sizing: border-box; }
+/* body{  background-color:rgba(58, 58, 58, 1);} */
+header {
+    position: fixed;
+    left:0;  
+    top:0; 
+    z-index: 20;
+    transition: background-color .6s ease-in-out, top .6s ease-in-out, height .6s ease-in-out, padding-top .6s ease-in-out;
+    padding-top:0px;
+    width:100%;
+    height:74px;
+    background:#fff;
+    padding-top:0;
+
+}
+
+.header_inner{
+    margin-top: -10px;
+}
+
+.container{
+    
+   height:100vh;
+ overflow: hidden;
+}
+
+main.flex-box{
+    display: flex;
+    justify-content: space-between;  
+    /* align-items: stretch; */
+}
+.flex-box>div{
+    width: 25%;
+    height: 100%;
+}
+ .back-img{
+    width: 100%;
+    height: 100%;
+  
+    cursor: pointer;
+     background-color:rgba(58, 58, 58, 0.7);
+    transition: all 0.3s;      
+    
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+   
+}
+.back-img:hover{
+    background-color:rgba(58, 58, 58, 0);
+}
+
+
+ 
+.flex-box>div>img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.section1,.section2,.section3,.section4{
+    position: relative; 
+    height:100vh;
+    top:0px;
+}
+.icon{
+    padding-top: 90%;
+   text-align: center;
+   transition: all 0.5s;
+   
+}
+
+.icon>h2{
+    color: #fff;
+}
+
+/* 버튼 */
+.button{
+   text-align: center;
+   width: 200px;
+   color: #fff;
+   border: solid 1px #fff;
+   cursor: pointer;
+   transition: all 0.5s;
+    opacity: 0;
+    margin:100px auto;
+   
+}
+
+
+.button>p{
+    padding: 20px;
+    font-size: 20px;
+  padding-left: 40px;
+    
+    
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #0D7ABE;
+}
+
+
+/* 스와이퍼========== */
+:root {
+    --swiper-theme-color: #fff;
+}
+ .modal-swiper{
+  position: relative;
+  height: 100%;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;  
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 40%;
+  height: 420px;
+margin: 0 auto;
+
+}
+.mySwiper{
+    overflow: visible;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next{
+    right: 350px;
+}
+.swiper-button-prev{
+    left: 350px;
+}
+.swiper-button-next:after{
+    font-size: 28px;
+}
+.swiper-button-prev:after{
+    font-size: 28px;
+}
+
+
+/* 모달창==================================== */
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #0d7abea2;   
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.modal-warp{
+    position: absolute;
+    left: 15%;
+    top: 100px;
+    display: block;
+    width: 70%;
+    height: 100%;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-text{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+     
+    
+}
+.modal-text>h2{
+    text-shadow: 2px 2px 2px gray; 
+}
+hr{
+    width: 50%;
+   margin: 10px auto;    
+}
+
+.bottom-text{
+   margin-top: 340px;
+   text-align: justify;
+   background-color: #fff;
+   color: #000;
+   width: 540px;
+   height: 190px;
+   padding: 20px;   
+   line-height: 24px;
+}
+
+.bottom-text>p>span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0D7ABE;
+}
+
+
+.modal-close{
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    top: 0px;    
+    display: block;
+    width: 50px;
+    text-shadow: 2px 2px 2px gray;    
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==-====================================미디어쿼리======================================== */
+@media(max-width:991px){
+    .container{
+        width: 100%;     
+    }
+
+    .header_inner{
+        margin-top: 0px;
+    }
+    
+
+    .flex-box{
+        flex-wrap: wrap;
+        
+    }
+    .flex-box>div{
+        width: 50%;
+        height: 50%;
+    }
+    .icon{
+        padding-top: 50%;
+       text-align: center;
+       transition: all 0.5s;
+       
+    }
+    .icon>h2{
+        color: #fff;
+    }
+    
+    /* 버튼 */
+    .button{
+        opacity: 1;
+        margin:20px auto;
+    }
+    
+    .button>p{
+        padding: 20px;
+        font-size: 20px;
+      padding-left: 40px;       
+    } 
+
+    /* 모달창 */
+    
+    .modal-warp{
+        left: 15%;
+        top: 200px;        
+    }
+ 
+    
+    .bottom-text{
+       width: 546px;
+       height: 200px;
+       padding: 30px 20px;   
+       line-height: 27px;
+    }
+    .swiper-slide img {
+        width: 95%;          
+      }
+      .swiper-button-next{
+        right: -30px;
+    }
+    .swiper-button-prev{
+        left: -30px;
+    }
+
+}
+
+
+/* ===========================모바일============================== */
+@media(max-width:767px){
+    .header_inner{
+        margin-top: 5px;
+    }
+
+    .icon{
+        padding-top: 65%;       
+    }
+    .icon>img{
+    width: 30%;
+  }
+
+    .icon>h2{
+        font-size: 1rem;
+    }
+    .button{
+        width: 100px;
+    }
+    .button>p{
+        padding: 10px ;
+        font-size: 1rem;       
+    }
+    
+    .swiper-slide img {
+        width: 100%;          
+      }
+      .bottom-text{
+        margin-top: 300px;
+        width:350px;
+        height: 250px;
+        padding: 30px 20px;   
+        line-height: 27px;
+        z-index: 100;
+     }
+     .swiper-button-next,.swiper-button-prev{
+        display: none;
+
+     }
+     .modal-warp{
+       
+        left: 5%;
+        top: 100px;
+        display: block;
+        width: 90%;
+        height: 100%;
+    }
+}
